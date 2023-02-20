@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/roger/GitHub/moodmap/macos/Pods/FirebaseFirestore/Firestore/core/src/api/settings.cc \
+  /Users/roger/GitHub/moodmap/macos/Pods/FirebaseFirestore/Firestore/core/src/api/settings.h \
+  /Users/roger/GitHub/moodmap/macos/Pods/FirebaseFirestore/Firestore/core/src/util/hashing.h \
+  /Users/roger/GitHub/moodmap/macos/Pods/FirebaseFirestore/Firestore/core/src/objc/objc_type_traits.h \
+  /Users/roger/GitHub/moodmap/macos/Pods/FirebaseFirestore/Firestore/core/src/util/type_traits.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/meta/type_traits.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/config.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/options.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/policy_checks.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/optional.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/utility/utility.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/inline_variable.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/identity.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/invoke.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/attributes.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/bad_optional_access.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/internal/optional.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/memory/memory.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/macros.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/optimization.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/port.h
