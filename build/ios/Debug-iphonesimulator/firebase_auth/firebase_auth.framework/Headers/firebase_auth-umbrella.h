@@ -13,9 +13,7 @@
 #import "FLTAuthStateChannelStreamHandler.h"
 #import "FLTIdTokenChannelStreamHandler.h"
 #import "FLTPhoneNumberVerificationStreamHandler.h"
-#import "CustomPigeonHeader.h"
 #import "FLTFirebaseAuthPlugin.h"
-#import "messages.g.h"
 
 FOUNDATION_EXPORT double firebase_authVersionNumber;
 FOUNDATION_EXPORT const unsigned char firebase_authVersionString[];

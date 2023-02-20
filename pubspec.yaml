@@ -28,8 +28,9 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  firebase_auth: ^3.3.0
-  cloud_firestore: ^3.1.7
+  firebase_auth: 3.3.0
+  cloud_firestore: 3.1.7
+  firebase_auth_platform_interface: 6.1.10
   flutter:
     sdk: flutter
 
