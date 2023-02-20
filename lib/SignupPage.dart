@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
 import 'AuthService.dart';
 
 class SignupPage extends StatefulWidget {
@@ -10,6 +12,7 @@ class _SignupPageState extends State<SignupPage> {
   final _formKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
+  final _usernameController = TextEditingController();
 
   AuthService _authService = AuthService();
 
@@ -47,7 +50,20 @@ class _SignupPageState extends State<SignupPage> {
                   if (value == null || value.isEmpty) {
                     return "Please enter a password";
                   }
-                  return null; // This line was missing in your code
+                  return null;
+                },
+              ),
+              SizedBox(height: 16.0),
+              TextFormField(
+                controller: _usernameController,
+                decoration: InputDecoration(
+                  labelText: "Username",
+                ),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return "Please enter a username";
+                  }
+                  return null;
                 },
               ),
               SizedBox(height: 16.0),
@@ -58,6 +74,7 @@ class _SignupPageState extends State<SignupPage> {
                         await _authService.createUserWithEmailAndPassword(
                       email: _emailController.text.trim(),
                       password: _passwordController.text.trim(),
+                      username: _usernameController.text.trim(),
                     );
                     if (result == null) {
                       ScaffoldMessenger.of(context).showSnackBar(

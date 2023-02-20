@@ -66,7 +66,8 @@ class _ProfilePageState extends State<ProfilePage> {
                       _user = UserModel(
                           id: _user!.id,
                           email: _user!.email,
-                          username: _usernameController.text);
+                          username: _usernameController.text,
+                          password: "");
                     });
 
                     ScaffoldMessenger.of(context).showSnackBar(

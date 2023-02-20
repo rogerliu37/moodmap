@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'AuthService.dart';
+import 'HomePage.dart';
+import 'SignupPage.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -16,7 +18,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Login")),
+      appBar: AppBar(title: Text("Log in")),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Form(
@@ -64,18 +66,19 @@ class _LoginPageState extends State<LoginPage> {
                         SnackBar(content: Text("Invalid email or password")),
                       );
                     } else {
-                      Navigator.pushReplacementNamed(context, '/');
+                      Navigator.pushNamedAndRemoveUntil(
+                          context, '/', (Route<dynamic> route) => false);
                     }
                   }
                 },
-                child: Text("Login"),
+                child: Text("Log in"),
               ),
-              SizedBox(height: 16.0),
               TextButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/signup');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SignupPage()));
                 },
-                child: Text("Create an account"),
+                child: Text("Don't have an account? Sign up"),
               ),
             ],
           ),
