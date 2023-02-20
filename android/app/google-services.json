@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "762243564655",
+    "project_id": "moodmap-20031",
+    "storage_bucket": "moodmap-20031.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762243564655:android:faa8bba5ac8f968a9b799a",
+        "android_client_info": {
+          "package_name": "com.example.moodmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762243564655-avagd84jljmiftrac2qrr47fp2ftm6vq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASiYLtU2ZYOxbpRcJ__KBNzimJQkQw9vc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762243564655-avagd84jljmiftrac2qrr47fp2ftm6vq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "762243564655-6p57084jbm3fku1uu24tbcendlftfknf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.moodmap"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
