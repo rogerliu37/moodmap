@@ -14,9 +14,31 @@ class _LoginPageState extends State<LoginPage> {
   final _passwordController = TextEditingController();
 
   AuthService _authService = AuthService();
+  @override
+  void initState() {
+    print('LoginPage: initState called');
+    super.initState();
+    // Called when the widget is inserted into the widget tree
+  }
+
+  @override
+  void dispose() {
+    // Called when the widget is removed from the widget tree
+    super.dispose();
+    print('LoginPage: dispose() called');
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Called when the widget's dependencies have changed
+    // Handle any changes to the dependencies here
+    print('LoginPage: didChangeDependencies() called');
+  }
 
   @override
   Widget build(BuildContext context) {
+    print('LoginPage: build() called');
     return Scaffold(
       appBar: AppBar(title: Text("Log in")),
       body: Padding(

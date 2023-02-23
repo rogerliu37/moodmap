@@ -4,6 +4,7 @@ import 'AuthService.dart';
 import 'LoginPage.dart';
 import 'ProfilePage.dart';
 import 'SignupPage.dart';
+import 'dart:async';
 
 class HomePage extends StatefulWidget {
   @override
@@ -12,9 +13,37 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   AuthService _authService = AuthService();
+  Timer _timer = Timer(Duration.zero, () {});
+
+  @override
+  void initState() {
+    print('HomePage: initState called');
+    super.initState();
+    // Called when the widget is inserted into the widget tree
+    _timer = Timer.periodic(Duration(seconds: 5), (Timer timer) {
+      print('HomePage: 5 seconds have passed. ');
+    });
+  }
+
+  @override
+  void dispose() {
+    // Called when the widget is removed from the widget tree
+    _timer.cancel();
+    super.dispose();
+    print('HomePage: dispose() called');
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Called when the widget's dependencies have changed
+    // Handle any changes to the dependencies here
+    print('HomePage: didChangeDependencies() called');
+  }
 
   @override
   Widget build(BuildContext context) {
+    print('HomePage: build() called');
     return Scaffold(
       appBar: AppBar(title: Text("Home")),
       drawer: Drawer(

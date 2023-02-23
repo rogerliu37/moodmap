@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">762243564655-avagd84jljmiftrac2qrr47fp2ftm6vq.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">762243564655</string>
+    <string name="google_api_key" translatable="false">AIzaSyASiYLtU2ZYOxbpRcJ__KBNzimJQkQw9vc</string>
+    <string name="google_app_id" translatable="false">1:762243564655:android:faa8bba5ac8f968a9b799a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyASiYLtU2ZYOxbpRcJ__KBNzimJQkQw9vc</string>
+    <string name="google_storage_bucket" translatable="false">moodmap-20031.appspot.com</string>
+    <string name="project_id" translatable="false">moodmap-20031</string>
+</resources>

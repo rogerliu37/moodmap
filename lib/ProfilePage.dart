@@ -17,7 +17,23 @@ class _ProfilePageState extends State<ProfilePage> {
   UserModel? _user;
 
   @override
+  void dispose() {
+    // Called when the widget is removed from the widget tree
+    super.dispose();
+    print('ProfilePage: dispose() called');
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Called when the widget's dependencies have changed
+    // Handle any changes to the dependencies here
+    print('ProfilePage: didChangeDependencies() called');
+  }
+
+  @override
   void initState() {
+    print('ProfilePage: initState called');
     super.initState();
     _user = _authService.getCurrentUser();
     _usernameController.text = _user!.username;
@@ -25,6 +41,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
   @override
   Widget build(BuildContext context) {
+    print('ProfilePage: build() called');
     return Scaffold(
       appBar: AppBar(
         title: Text("Profile"),

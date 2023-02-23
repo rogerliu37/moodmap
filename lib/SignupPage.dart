@@ -17,7 +17,30 @@ class _SignupPageState extends State<SignupPage> {
   AuthService _authService = AuthService();
 
   @override
+  void initState() {
+    print('SignupPage: initState called');
+    super.initState();
+    // Called when the widget is inserted into the widget tree
+  }
+
+  @override
+  void dispose() {
+    // Called when the widget is removed from the widget tree
+    super.dispose();
+    print('SignupPage: dispose() called');
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Called when the widget's dependencies have changed
+    // Handle any changes to the dependencies here
+    print('SignupPage: didChangeDependencies() called');
+  }
+
+  @override
   Widget build(BuildContext context) {
+    print('SignupPage: build() called');
     return Scaffold(
       appBar: AppBar(title: Text("Sign up")),
       body: Padding(

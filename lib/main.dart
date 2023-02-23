@@ -14,6 +14,7 @@ void main() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    print('main: build() called');
     return MaterialApp(
       title: 'Flutter Firebase Auth Demo',
       theme: ThemeData(
