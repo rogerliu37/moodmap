@@ -1,0 +1,22 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "310c81af9518bb2f7f27c90ca049c9077b5dde9c26f5539253e3e10ee26f1d83"
+build_start_time: [1676912569, 5172967]
+build_end_time: [1676912574, 417305946]
+inputs:
+  "/Users/roger/GitHub/moodmap/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Heartbeat.swift": [1676912540, 480903148]
+  ? "/Users/roger/GitHub/moodmap/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatController.swift"
+  : [1676912540, 481997013]
+  ? "/Users/roger/GitHub/moodmap/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatStorage.swift"
+  : [1676912540, 482383728]
+  ? "/Users/roger/GitHub/moodmap/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsBundle.swift"
+  : [1676912540, 482686519]
+  ? "/Users/roger/GitHub/moodmap/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsPayload.swift"
+  : [1676912540, 482988119]
+  "/Users/roger/GitHub/moodmap/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/RingBuffer.swift": [1676912540, 481172323]
+  "/Users/roger/GitHub/moodmap/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Storage.swift": [1676912540, 480663776]
+  "/Users/roger/GitHub/moodmap/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/StorageFactory.swift": [1676912540, 483204126]
+  "/Users/roger/GitHub/moodmap/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/WeakContainer.swift": [1676912540, 482842445]
+  ? "/Users/roger/GitHub/moodmap/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatController.swift"
+  : [1676912540, 481709003]
+  ? "/Users/roger/GitHub/moodmap/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatsPayload.swift"
+  : [1676912540, 482158660]
