@@ -4,6 +4,8 @@ import 'HomePage.dart';
 import 'LoginPage.dart';
 import 'SignupPage.dart';
 import 'ProfilePage.dart';
+import 'AddMoodPage.dart';
+import 'MapPage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,6 +29,8 @@ class MyApp extends StatelessWidget {
         '/login': (context) => LoginPage(),
         '/signup': (context) => SignupPage(),
         '/profile': (context) => ProfilePage(),
+        '/add': (context) => AddMoodPage(),
+        '/map': (context) => MapPage(),
       },
     );
   }
