@@ -18,7 +18,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
   @override
   void dispose() {
-    // Called when the widget is removed from the widget tree
+    _usernameController.dispose();
     super.dispose();
     print('ProfilePage: dispose() called');
   }
@@ -26,8 +26,6 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    // Called when the widget's dependencies have changed
-    // Handle any changes to the dependencies here
     print('ProfilePage: didChangeDependencies() called');
   }
 
@@ -35,8 +33,25 @@ class _ProfilePageState extends State<ProfilePage> {
   void initState() {
     print('ProfilePage: initState called');
     super.initState();
+    _fetchUserData();
+  }
+
+  Future<void> _fetchUserData() async {
     _user = _authService.getCurrentUser();
-    _usernameController.text = _user!.username;
+    if (_user != null) {
+      DocumentSnapshot doc = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(_user!.id)
+          .get();
+      setState(() {
+        _user = UserModel(
+            id: _user!.id,
+            email: _user!.email,
+            username: doc['username'] ?? '',
+            password: "");
+        _usernameController.text = _user!.username;
+      });
+    }
   }
 
   @override
@@ -57,10 +72,17 @@ class _ProfilePageState extends State<ProfilePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              Text(
+                _user?.username != null && _user!.username.isNotEmpty
+                    ? 'Current username: ${_user!.username}'
+                    : 'No username set',
+                style: TextStyle(fontSize: 16),
+              ),
+              SizedBox(height: 16.0),
               TextFormField(
                 controller: _usernameController,
                 decoration: InputDecoration(
-                  labelText: "Username",
+                  labelText: "Update Username",
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
@@ -73,11 +95,12 @@ class _ProfilePageState extends State<ProfilePage> {
               ElevatedButton(
                 onPressed: () async {
                   if (_formKey.currentState!.validate()) {
-                    // Update the user's username in Firestore
+                    // Update the user's username in Firestore or create a new document
                     await FirebaseFirestore.instance
                         .collection('users')
                         .doc(_user!.id)
-                        .update({'username': _usernameController.text});
+                        .set({'username': _usernameController.text},
+                            SetOptions(merge: true));
 
                     setState(() {
                       _user = UserModel(

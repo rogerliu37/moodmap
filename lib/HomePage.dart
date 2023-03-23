@@ -5,7 +5,7 @@ import 'LoginPage.dart';
 import 'ProfilePage.dart';
 import 'SignupPage.dart';
 import 'AddMoodPage.dart';
-import 'MapPage.dart';
+import 'MoodPage.dart';
 import 'dart:async';
 
 class HomePage extends StatefulWidget {
@@ -98,8 +98,8 @@ class _HomePageState extends State<HomePage> {
             case '/add':
               builder = (BuildContext context) => AddMoodPage();
               break;
-            case '/map':
-              builder = (BuildContext context) => MapPage();
+            case '/history':
+              builder = (BuildContext context) => MoodPage();
               break;
             default:
               throw Exception('Invalid route: ${settings.name}');
@@ -137,6 +137,13 @@ class _HomePageState extends State<HomePage> {
               Navigator.pushNamed(context, '/add');
             },
             child: Text("Add Mood"),
+          ),
+          SizedBox(height: 16.0),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/history');
+            },
+            child: Text("History"),
           ),
         ],
       ),
