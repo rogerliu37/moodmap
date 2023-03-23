@@ -1,0 +1,27 @@
+dependencies: \
+  /Users/roger/GitHub/moodmap/macos/Pods/FirebaseFirestore/Firestore/core/src/core/filter.cc \
+  /Users/roger/GitHub/moodmap/macos/Pods/FirebaseFirestore/Firestore/core/src/core/filter.h \
+  /Users/roger/GitHub/moodmap/macos/Pods/FirebaseFirestore/Firestore/core/src/model/model_fwd.h \
+  /Users/roger/GitHub/moodmap/macos/Pods/FirebaseFirestore/Firestore/Protos/nanopb/google/firestore/v1/document.nanopb.h \
+  /Users/roger/GitHub/moodmap/macos/Pods/nanopb/pb.h \
+  /Users/roger/GitHub/moodmap/macos/Pods/FirebaseFirestore/Firestore/Protos/nanopb/google/api/annotations.nanopb.h \
+  /Users/roger/GitHub/moodmap/macos/Pods/FirebaseFirestore/Firestore/Protos/nanopb/google/api/http.nanopb.h \
+  /Users/roger/GitHub/moodmap/macos/Pods/FirebaseFirestore/Firestore/Protos/nanopb/google/protobuf/struct.nanopb.h \
+  /Users/roger/GitHub/moodmap/macos/Pods/FirebaseFirestore/Firestore/Protos/nanopb/google/protobuf/timestamp.nanopb.h \
+  /Users/roger/GitHub/moodmap/macos/Pods/FirebaseFirestore/Firestore/Protos/nanopb/google/type/latlng.nanopb.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/optional.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/config.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/options.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/policy_checks.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/utility/utility.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/inline_variable.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/identity.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/invoke.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/meta/type_traits.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/attributes.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/bad_optional_access.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/internal/optional.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/memory/memory.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/macros.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/optimization.h \
+  /Users/roger/GitHub/moodmap/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/port.h

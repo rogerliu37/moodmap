@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "1869f526944895ad8c2fdd58f95a8da0379ac6a1322dc06d2dd246fd750d0b69"
+build_start_time: [1676912689, 670160055]
+build_end_time: [1676912701, 648960113]
+inputs:
+  "/Users/roger/GitHub/moodmap/macos/Flutter/GeneratedPluginRegistrant.swift": [1676912622, 489261627]
+  "/Users/roger/GitHub/moodmap/macos/Runner/AppDelegate.swift": [1676912297, 801684379]
+  "/Users/roger/GitHub/moodmap/macos/Runner/MainFlutterWindow.swift": [1676912297, 803709030]
